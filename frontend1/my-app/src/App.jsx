@@ -52,7 +52,7 @@ export default function App() {
   const [alertMessage, setAlertMessage] = useState("");
   const [showAlertModal, setShowAlertModal] = useState(false);
 
-  const whatsappNumber = "9154929260";
+  const whatsappNumber = "7331119439";
 
   const openApplyModal = () => {
     setApplicationType("faculty");
@@ -173,7 +173,7 @@ export default function App() {
         {/* WhatsApp */}
         <a
           className="fixed right-4 bottom-6 z-[1201] bg-[#26ff00] text-white p-2 rounded-full shadow-lg transition hover:scale-110 flex items-center justify-center sm:right-3 sm:bottom-4"
-          href={`https://wa.me/9154929260?text=Hello%20SMRU%20Team%2C%20I%20have%20a%20query.`}
+          href={`https://wa.me/7331119439?text=Hello%20SMRU%20Team%2C%20I%20have%20a%20query.`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"

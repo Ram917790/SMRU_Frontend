@@ -186,19 +186,22 @@ export default function Home() {
                 className="text-white font-extrabold tracking-tight drop-shadow-[0_3px_12px_rgba(0,0,0,0.45)] text-[8vw] sm:text-[6.5vw] md:text-6xl lg:text-[64px] md:whitespace-nowrap leading-[1.05]"
                 data-reveal="fade-up"
               >
-                Empowering Through
-                <span className="text-[#FFAF3A]"> Rehabilitation.</span>
+                St.Mary's Rehabilitation University -
+                <span className="text-[#FFAF3A]">SMRU</span>
               </h1>
             </div>
 
             {/* NEW: clean caption directly under the heading */}
-            <p
-              className="mt-3 text-white/95 text-base sm:text-lg md:text-xl leading-relaxed"
+            {/* <p
+              className="mt-6 text-left font-bold text-xl sm:text-2xl md:text-3xl leading-relaxed"
               data-reveal="fade-up"
-              style={{ "--delay": "0.1s" }}
+              style={{ "--delay": "0.1s", color: "#ffaf3a" }}
             >
-              Study Physiotherapy, Psychology, BASLP, and more — with <span className="font-semibold">clinical training from day one</span>, dedicated mentors, and placements with leading rehabilitation centers.
-            </p>
+              Empowering Through Rehabilitation.
+            </p> */}
+
+
+
 
             {/* Kept your pill strip? If you prefer only one caption, you can remove this block. */}
             <div

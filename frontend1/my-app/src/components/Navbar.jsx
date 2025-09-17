@@ -60,6 +60,18 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+          <li>
+            {/* Campus 360 link */}
+            <a
+              href="https://www.google.co.in/maps/uv?hl=en&pb=!1s0x3bcb72a555555573%3A0xa6e5c60c56c9ffd!3m1!7e115!4s%2Fmaps%2Fplace%2Fstmarys%2Bgroup%2Bof%2Binstitutions%2F%4017.3320062%2C78.7276328%2C3a%2C75y%2C260.33h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sCqjunw4dGqkAAAQvOdM3Zg*212e0*214m2*213m1*211s0x0%3A0xa6e5c60c56c9ffd!5sstmarys%20group%20of%20institutions%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e2!2sCqjunw4dGqkAAAQvOdM3Zg&sa=X&ved=0ahUKEwjHzqysuNHMAhUISI8KHYbZDmUQoB8IezAK"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+              className="text-lg font-medium hover:text-[#ffaf3a] transition"
+            >
+              Campus 360
+            </a>
+          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -112,6 +124,18 @@ const Navbar = () => {
             <Link to="/contact" onClick={closeMenu} className="text-lg font-medium hover:text-[#ffaf3a] transition">
               Contact
             </Link>
+          </li>
+          <li>
+            {/* Campus 360 link */}
+            <a
+              href="https://www.google.co.in/maps/uv?hl=en&pb=!1s0x3bcb72a555555573%3A0xa6e5c60c56c9ffd!3m1!7e115!4s%2Fmaps%2Fplace%2Fstmarys%2Bgroup%2Bof%2Binstitutions%2F%4017.3320062%2C78.7276328%2C3a%2C75y%2C260.33h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sCqjunw4dGqkAAAQvOdM3Zg*212e0*214m2*213m1*211s0x0%3A0xa6e5c60c56c9ffd!5sstmarys%20group%20of%20institutions%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e2!2sCqjunw4dGqkAAAQvOdM3Zg&sa=X&ved=0ahUKEwjHzqysuNHMAhUISI8KHYbZDmUQoB8IezAK"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+              className="text-lg font-medium hover:text-[#ffaf3a] transition"
+            >
+              Campus 360
+            </a>
           </li>
         </ul>
       )}

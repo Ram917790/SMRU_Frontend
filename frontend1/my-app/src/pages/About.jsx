@@ -9,6 +9,10 @@ import founderImg from "../assets/kvk.jpg";
 import harshaImg from "../assets/harsha.jpg";
 import indrajaImg from "../assets/indraja.jpg";
 import induImg from "../assets/indu.jpg";
+// at the other imports…
+import LeadershipBoards from "../components/LeadershipBoards";
+import { leadershipGroups } from "../data/leaders";  // <-- add this
+
 
 import {
   FaEye, FaBullseye, FaTrophy, FaHeart, FaLightbulb, FaShieldAlt, FaUniversity,
@@ -208,7 +212,7 @@ export default function About() {
     { year: "2009", title: "Integrated & Tech Leap", description: "Integrated Campus Hyderabad and CE&T Patancheru start; Sree Harsha Technologies training centre opens.", icon: <FaGraduationCap aria-hidden />, side: "left" },
     { year: "2011", title: "Pan-India Presence – Kolkata", description: "St. Mary’s Technical Campus Kolkata launches with Engineering, Management & MCA schools.", icon: <FaGlobe aria-hidden />, side: "right" },
     { year: "2020", title: "Creative & Digital Frontier", description: "Visual Arts & Design Degree College opens; tele-rehab and digital-health pilots roll out.", icon: <FaPaintBrush aria-hidden />, side: "left" },
-    { year: "2025", title: "SMRU Chartered", description: "India’s first private university dedicated to rehabilitation sciences.", icon: <FaUniversity aria-hidden />, side: "right" },
+    { year: "2025", title: "St.Mary's Rehabilitation University", description: "India’s first private university dedicated to rehabilitation sciences.", icon: <FaUniversity aria-hidden />, side: "right" },
   ];
 
   /* ---- Leadership data (slugs match /leadership/:slug routes) ---- */
@@ -442,7 +446,7 @@ export default function About() {
       </section>
 
       {/* FEATURED STRIP — Leading a legacy of transformative impact */}
-      <section className="py-12 bg-white" id="legacy">
+      {/*<section className="py-12 bg-white" id="legacy">
         <div className="container max-w-screen-xl mx-auto px-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d315c]" data-reveal="fade-up">
@@ -475,10 +479,10 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
-
+      </section>*/}
       {/* LEADERSHIP TABS */}
-      <LeadershipSection data={leadershipData} initial="Sponsor Body" />
+      <LeadershipBoards groups={leadershipGroups} />
+
 
       {/* Reveal animations */}
       <style>{`

@@ -21,6 +21,11 @@ export const schools = [
       capable of addressing individual and community health needs. With a unique focus on
       nursing, rehabilitation care, and public health, the school blends clinical excellence
       with community-based learning.
+
+      Departments:
+      1) Dept of Nursing
+      2) Dept of Rehabilitation Nursing
+      3) Dept of Public Health
     `),
     departments: [
       {
@@ -30,6 +35,7 @@ export const schools = [
           The Department of Nursing develops compassionate, skilled, and competent nursing
           professionals who deliver high-quality patient care across diverse settings with a
           balance of theory, clinical expertise, and ethics.
+          Programs Offered: B.Sc. Nursing (Male/Female), Master of Nursing
         `),
         programs: [
           {
@@ -37,8 +43,24 @@ export const schools = [
             name: "B.Sc. Nursing",
             level: "Undergraduate",
             overview: text(`
-              4-year program preparing professional registered nurses. Strong clinical
-              practice across multi-specialty settings; rehab-sensitive approach. NCLEX-ready foundation.
+              Bachelor of Nursing (B.Sc. Nursing) — 4-year program preparing professional registered nurses.
+              Strong clinical practice across multi-specialty settings; rehab-sensitive approach; NCLEX-ready foundation.
+
+              Duration: 4 years (8 semesters), including clinical rotations in multi-specialty hospital settings.
+              Eligibility: As per university/regulatory norms for B.Sc. Nursing (10+2 with PCB etc. — per prospectus).
+              SMRU Tuition Fee: ₹1,00,000 per annum (hostel, exam, lab, internship extra; applications & entrance exam fees separately)
+
+              Specializations:
+              Major (≥40 credits): Critical Care (INC), Pediatric/Neonatal (INC), Oncology (INC), Medical-Surgical,
+              Community Health, Psychiatric (INC), Obstetric & Gynec (INC), Nursing Education, Nursing Management,
+              Cardiothoracic (INC)
+              Minor (≥18 credits): Emergency Nursing; Psychiatric/Neuro Nursing; Palliative Care; Orthopedic/Oncology (INC);
+              Nursing Management; Neuro/Research (INC); Pediatric/Community; Nursing Research; Community Health; Operation Room Nursing (INC)
+
+              Career Outcomes: Registered Nurse (post INC registration) in hospitals (ICU/Wards), Community Health Nurse,
+              Pediatric Nurse, Rehabilitation Nurse, Nurse Educator/Trainer. India entry-level ~₹3.5 LPA; International ~$65,000.
+              Accreditations: INC + State Nursing Council; Degree by SMRU (UGC). Curriculum aligned to WHO/ICN competencies.
+              Why St. Mary’s?: INC-recognized, advanced labs, and St. Mary’s University trust.
             `),
             duration: "4 years (8 semesters) + clinical rotations",
             eligibility: "10+2 with PCB; as per university/regulatory norms",
@@ -59,8 +81,22 @@ export const schools = [
             name: "M.Sc. Nursing",
             level: "Postgraduate",
             overview: text(`
-              Advanced practice nurse preparation with specialization, leadership, and research aligned
-              to international nursing standards.
+              Master of Nursing — postgraduate program for advanced practice, specialization, leadership & research.
+              Eligibility: B.Sc. Nursing (Basic/Post-Basic) with 55% + 1 year RN/RM experience; valid state council registration;
+              entrance/interview as per policy.
+
+              Duration: 2 years (4 semesters)
+              Fees: ₹1,50,000 per annum (extras as per norms)
+
+              Specializations (Major ≥40 credits):
+              Critical Care (INC), Pediatric/Neonatal (INC), Oncology (INC), Medical-Surgical, Community Health,
+              Psychiatric (INC), Obstetric & Gynec (INC), Nursing Education, Nursing Management, Cardiothoracic (INC)
+              Minors (≥18 credits) include Emergency Nursing; Psychiatric/Neuro; Palliative Care; Orthopedic/Oncology (INC);
+              Nursing Management; Neuro/Research (INC); Pediatric/Community; Nursing Research; Community Health; OR Nursing (INC)
+
+              Outcomes: Nurse Educator, Advanced Practice/Clinical Nurse Specialist, Nurse Manager/Superintendent,
+              Community/Public Health Nurse Specialist, Nursing Researcher. India entry-level ~₹6.0 LPA; International ~$90,000.
+              Accreditation: INC + State Council; degree by SMRU; international standards focus.
             `),
             duration: "2 years (4 semesters)",
             eligibility: "B.Sc. Nursing (Basic/Post-Basic) + 1 yr RN/RM experience; valid registration",
@@ -79,6 +115,7 @@ export const schools = [
         about: text(`
           Inpatient/outpatient care for disability and chronic illness, with 24×7 acute rehab units,
           interdisciplinary practice, clinical exposure, and record-keeping training.
+          Programs offered: B.Sc. Rehabilitation Nursing; M.Sc. Rehabilitation Nursing.
         `),
         programs: [
           { slug: "bsc-rehab-nursing", name: "B.Sc. Rehabilitation Nursing" },
@@ -91,6 +128,7 @@ export const schools = [
         about: text(`
           Bachelor/Master pathways building competencies for population health, disease prevention,
           health informatics, and healthcare management; includes certificate options.
+          Programs offered: BPH; MPH.
         `),
         programs: [
           { slug: "bph", name: "Bachelor of Public Health" },
@@ -111,6 +149,10 @@ export const schools = [
       Committed to excellence in pharmaceutical education, research, and innovation with
       a rehabilitation-focused pharmacotherapy lens; bridges core pharmaceutics with rehab care
       to support recovery, chronic care, and community impact.
+
+      Departments:
+      1) Dept. of Pharmaceutical Sciences
+      2) Dept. of Rehabilitation Pharmaceutical Sciences
     `),
     departments: [
       {
@@ -119,6 +161,7 @@ export const schools = [
         about: text(`
           Scientific study of drugs and their effects on the human body; advances safe and effective therapies
           through understanding of drug–biological interactions.
+          Programs: B.Pharm; M.Pharm; Ph.D.
         `),
         programs: [
           { slug: "bpharm", name: "Bachelor of Pharmacy (B.Pharm)" },
@@ -132,6 +175,7 @@ export const schools = [
         about: text(`
           Optimal pharmaceutical care within rehabilitation medicine—integrates clinical pharmacists
           into multidisciplinary teams for safe, rational, cost-effective medication use.
+          Programs: B.Pharm & Disability Studies; M.Pharm & Disability Studies.
         `),
         programs: [
           { slug: "bpharm-disability", name: "Bachelor of Pharmacy & Disability Studies" },
@@ -151,6 +195,8 @@ export const schools = [
     about: text(`
       Develops professionals who diagnose, manage, and treat communication and hearing disorders.
       Rehab-focused training in speech-language therapy, audiological assessment, and inclusive communication.
+
+      Departments: Audiology; Speech-Language Pathology; Indian Sign Language.
     `),
     departments: [
       {
@@ -159,6 +205,7 @@ export const schools = [
         about: text(`
           Future-ready training in hearing and balance; education in hearing assessment,
           hearing aids, cochlear implants, auditory training; strong clinical exposure.
+          Programs: BASLP; M.Sc. (Audiology).
         `),
         programs: [
           {
@@ -166,9 +213,11 @@ export const schools = [
             name: "B.A.S.L.P.",
             level: "Undergraduate",
             overview: text(`
-              4-year course (plus internship year counted separately in duration below) integrating
-              foundational sciences, communication disorders, and hands-on clinical training in
-              speech/hearing/language impairments.
+              BASLP — 4-year course plus 1-year internship integrating foundational sciences,
+              communication disorders, and hands-on clinical training (speech/hearing/language).
+              Eligibility: 10+2 (Physics, Chemistry, Biology, Mathematics) ≥50%.
+              Fees: ₹1,50,000 per annum (extras as per norms).
+              Accreditation: RCI-aligned; WHO/ASHA-informed training; strong clinical exposure from day one.
             `),
             duration: "5 years (4 years coursework + 1 year internship)",
             eligibility: "10+2 (Physics, Chemistry, Biology, Mathematics) with ≥50%",
@@ -214,6 +263,8 @@ export const schools = [
     about: text(`
       A forward-thinking hub where innovation meets healthcare. Interdisciplinary training to build
       devices, systems, and technologies for medical science, rehabilitation, and human well-being.
+
+      Departments: Biomedical Engineering; Rehabilitation Engineering; General Engineering.
     `),
     departments: [
       {
@@ -271,6 +322,8 @@ export const schools = [
     about: text(`
       Advances mental health and well-being through education, research, and clinical practice with
       rehabilitation and community impact; integrates theory with hands-on training.
+
+      Departments: Applied Psychology & Behavioral Health; Clinical Psychology; Rehabilitation Psychology.
     `),
     departments: [
       {
@@ -291,6 +344,7 @@ export const schools = [
             overview: text(`
               Strong foundation in clinical, counseling, and applied psychology within a rehabilitation-focused
               environment; case discussions and hands-on training across health, education, and social sectors.
+              Prepares for careers or further studies; aligns to APA/IPA guidance at UG level (for parity).
             `),
           },
           {
@@ -302,7 +356,7 @@ export const schools = [
             fees: "₹1,30,000 per annum (extras as per norms)",
             overview: text(`
               Advanced expertise in clinical, counseling, and digital psychology with rehabilitation focus;
-              integrated research, fieldwork, and hands-on training.
+              integrated research, fieldwork, and hands-on training. NAHC/UGC-recognized degree.
             `),
           },
         ],
@@ -323,8 +377,9 @@ export const schools = [
             eligibility: "10+2 any stream; 45–50% recommended",
             fees: "₹1,00,000 per annum (extras as per norms)",
             overview: text(`
-              Foundation in behavior, emotional well-being, and mental health; assessment, counseling, and
-              therapy skills; early clinical exposure and rehab focus.
+              Foundation in behavior, emotional well-being, and mental health; assessment, counseling, and therapy skills;
+              early clinical exposure and rehab focus. Progression to M.A./M.Sc. for licensure pathways.
+              Accreditation: Degree recognized by UGC; not a license by itself; prepares for RCI-regulated routes.
             `),
           },
           {
@@ -336,7 +391,7 @@ export const schools = [
             fees: "₹1,30,000 per annum (extras as per norms)",
             overview: text(`
               Postgraduate training in psychopathology, counseling, assessment, and evidence-based therapies;
-              rehab-oriented fieldwork and supervised practice.
+              rehab-oriented fieldwork and supervised practice. Prepares for M.Phil/RCI track and clinical roles.
             `),
           },
           {
@@ -348,7 +403,7 @@ export const schools = [
             fees: "₹2,50,000 per annum (extras as per norms)",
             overview: text(`
               Rigorous pathway to licensed Clinical Psychologist with >1500 hours supervised clinical training
-              as per RCI; independent practice readiness.
+              as per RCI; independent practice readiness; aligned to national standards.
             `),
           },
         ],
@@ -370,8 +425,8 @@ export const schools = [
             eligibility: "M.A./M.Sc. Psychology ≥55% (50% SC/ST); entrance + interview per RCI norms",
             fees: "₹1,50,000 per annum (extras as per norms)",
             overview: text(`
-              Specialized training to address psychological needs in disability and chronic conditions; >1500 hours
-              supervised practicum; careers across rehab centers, hospitals, schools, NGOs.
+              Specialized training for disability and chronic-condition contexts; >1500 hours supervised practicum;
+              careers across rehab centers, hospitals, schools, NGOs; RCI-recognized professional route.
             `),
           },
         ],
@@ -389,6 +444,10 @@ export const schools = [
     about: text(`
       Multidisciplinary center training health and allied health professionals in diagnostics,
       therapy, patient care, and health system management; strong hands-on clinical focus.
+
+      Departments: Medical Laboratory & Life Sciences; Trauma, Burn & Surgical Technology; Nutrition Science;
+      Ophthalmic Technology; Community Health & Primary Care; Radiology & Imaging Technology; Medical Technology
+      & Physician Assistant; Health Informatics & Data Management; Indian Medicine & Wellness Systems.
     `),
     departments: [
       {
@@ -555,6 +614,13 @@ export const schools = [
     about: text(`
       Center of excellence educating future leaders in rehabilitation; holistic, interdisciplinary
       approach with evidence-based practice, outreach, and faith-integrated learning.
+
+      Departments:
+      1) Physiotherapy
+      2) Occupational Therapy
+      3) Rehabilitation & Medical Science
+      4) Rehabilitation Social Work / Administration & Vocational Counseling
+      5) Rehabilitation & Biblical Studies
     `),
     departments: [
       {
@@ -572,7 +638,9 @@ export const schools = [
             eligibility: "10+2 with PCB (≥50%); entrance per norms",
             fees: "₹1,00,000 per annum (extras as per norms)",
             overview: text(`
-              Prepares physiotherapists for hospitals, clinics, sports/wellness settings; strong rehab and clinical exposure.
+              Curriculum integrates anatomy, therapeutic exercise, rehab tech, early clinical exposure.
+              Careers: physiotherapist in hospitals/clinics; sports/wellness; rehabilitation consultant; coordinator.
+              India EL ~₹4.0 LPA; International EL ~$60,000. Accreditations: NCAHP/RCI-aligned; seeks IAP recognition; WHO-aligned.
             `),
           },
           {
@@ -583,7 +651,8 @@ export const schools = [
             eligibility: "BPT with ≥50%; fitness certificate; entrance per norms",
             fees: "₹1,50,000 per annum (extras as per norms)",
             overview: text(`
-              Advanced clinical expertise, research capability, and leadership in neuro/musculoskeletal and other specialties.
+              Advanced coursework, hands-on mentorship, evidence-based practice; leadership & research focus.
+              India EL ~₹6.5 LPA; International EL ~$80,000. Aligned to Allied Health norms; NCAHP/RCI-aligned.
             `),
           },
         ],
@@ -603,6 +672,10 @@ export const schools = [
             duration: "5 years (4 coursework + 1 internship)",
             eligibility: "10+2 (PCB) ≥50%",
             fees: "₹1,00,000 per annum (extras as per norms)",
+            overview: text(`
+              Blends medical & behavioral sciences with rehab technology; simulation labs; placements in hospitals, schools, CBR.
+              India EL up to ₹4.0 LPA; International up to $55,000. NCAHP/RCI-aligned; aims WFOT global recognition.
+            `),
           },
           {
             slug: "mot",
@@ -611,6 +684,10 @@ export const schools = [
             duration: "2 years",
             eligibility: "BOT ≥50%; entrance per norms",
             fees: "₹1,50,000 per annum (extras as per norms)",
+            overview: text(`
+              Advanced Pediatric/Neuro/Geriatric OT; evidence-based, tech-driven interventions; leadership & research skills.
+              India EL ~₹6.5 LPA; International ~$75,000. RCI/NCAHP-aligned; aims advanced WFOT standards.
+            `),
           },
         ],
       },
@@ -619,6 +696,8 @@ export const schools = [
         name: "Department of Rehabilitation & Medical Science",
         about: text(`
           Restores/improves physical, mental, and social functioning post illness/injury/disability; multidisciplinary teamwork.
+          Programs: 9 specialized M.Sc. pathways (Neuro, Cognitive, Oncology, Ortho, Trauma & Sports, Pediatrics,
+          Blood/Cardiopulmonary, Geriatric, Post-COVID Rehab).
         `),
         programs: [
           { slug: "msc-neuro-rehab", name: "M.Sc. Neurological Rehabilitation" },
@@ -674,6 +753,8 @@ export const schools = [
     about: text(`
       Develops skilled, compassionate, and inclusive educators. Integrates Special Education, Inclusive Education,
       and General Education under one umbrella for an accessible learning environment for every child.
+
+      Departments: Special Education; Inclusive Education; General Education.
     `),
     departments: [
       {
@@ -681,10 +762,35 @@ export const schools = [
         name: "Department of Special Education",
         about: text(`
           Universal design and adaptive teaching; graduates lead in schools, NGOs, and educational orgs with strong placements and policy exposure.
+          Programs: B.Ed. Spl.Ed. (ASD/ID/LD/HI/VI/MD); M.Ed. Spl.Ed.; Integrated B.Ed.–M.Ed. Spl.Ed.
         `),
         programs: [
-          { slug: "bed-spl", name: "B.Ed. in Special Education (ASD/ID/LD/HI/VI/MD)" },
-          { slug: "med-spl", name: "M.Ed. in Special Education (ASD/ID/LD/HI/VI/MD)" },
+          {
+            slug: "bed-spl",
+            name: "B.Ed. in Special Education (ASD/ID/LD/HI/VI/MD)",
+            level: "Undergraduate",
+            overview: text(`
+              B.Ed. Spl.Ed. (ASD/ID/LD) — 2 years; internships/practicum; IEPs; behavior management; assistive tech.
+              Eligibility: Any Bachelor’s ≥50% (45% reserved); Sci/Engg streams 55% as per norms.
+              Fees: ₹1,00,000 per annum (extras as per norms). RCI & NCTE aligned. Strong govt & NGO job demand.
+            `),
+            duration: "2 years (4 semesters)",
+            eligibility: "Bachelor’s degree (≥50%; 45% reserved). Sci/Engg per norms.",
+            fees: "₹1,00,000 per annum (extras as per norms)",
+          },
+          {
+            slug: "med-spl",
+            name: "M.Ed. in Special Education (ASD/ID/LD/HI/VI/MD)",
+            level: "Postgraduate",
+            overview: text(`
+              M.Ed. Spl.Ed. — 2 years; advanced inclusion, assistive tech, leadership, research & policy.
+              Eligibility: B.Ed. Spl.Ed. ≥50% (or B.Ed. + RCI-recognized Special Ed diploma).
+              Fees: ₹1,50,000 per annum (extras as per norms). RCI approved; UGC-recognized PG.
+            `),
+            duration: "2 years (4 semesters)",
+            eligibility: "B.Ed. Spl.Ed. ≥50% or B.Ed. + RCI-recognized Special Education Diploma",
+            fees: "₹1,50,000 per annum (extras as per norms)",
+          },
           { slug: "integrated-bed-med", name: "Integrated B.Ed.–M.Ed. in Special Education (ASD/ID/LD/HI/VI/MD)" },
         ],
       },

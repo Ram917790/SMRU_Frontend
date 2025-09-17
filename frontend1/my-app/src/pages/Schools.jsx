@@ -1,10 +1,12 @@
+// C:\Projects\my_fullstack_app\frontend1\my-app\src\pages\Schools.jsx
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { schools } from "../data/schools";
 
-const BRAND_NAVY = "#0d315c";
-const BRAND_GREEN = "#009f6f";
-const BRAND_ORANGE = "#ffaf3a";
+const NAVY = "#0d315c";
+const GREEN = "#009f6f";
+const ORANGE = "#ffaf3a";
+const WHITE = "#FFFFFF";
 
 const slugify = (s = "") =>
   s.toString().trim().toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
@@ -16,32 +18,28 @@ export default function Schools() {
     ...s,
     slug: s.slug || slugify(s.name),
     deptCount: s.departments?.length || 0,
-    programCount:
-      s.departments?.reduce((sum, d) => sum + (d.programs?.length || 0), 0) || 0,
+    programCount: s.departments?.reduce((n, d) => n + (d.programs?.length || 0), 0) || 0,
   }));
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      {/* Header bar */}
-      <div
-        className="bg-white rounded-2xl p-5 shadow-sm border"
-        style={{ borderColor: "#ffe3b1" }}
-      >
+      {/* Header */}
+      <div className="rounded-2xl p-6 shadow-sm border" style={{ background: WHITE, borderColor: ORANGE }}>
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold" style={{ color: BRAND_NAVY }}>
+            <h1 className="text-2xl md:text-3xl font-extrabold" style={{ color: NAVY }}>
               Schools at St. Mary’s Rehabilitation University
             </h1>
-            <p className="mt-1 text-slate-600">
-              Pick a school from the sidebar or cards. Yellow badges show quick tips/counts.
+            <p className="mt-2 text-sm" style={{ color: NAVY }}>
+              Pick a school from the sidebar or cards. Yellow badges show quick counts.
             </p>
           </div>
           <a
             href="https://admissions.smru.in"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-xl text-white"
-            style={{ backgroundColor: BRAND_GREEN }}
+            className="px-4 py-2 rounded-xl font-semibold"
+            style={{ background: GREEN, color: WHITE }}
           >
             Apply / Enquire
           </a>
@@ -51,35 +49,36 @@ export default function Schools() {
       {/* Mobile toggle for sidebar */}
       <div className="mt-4 md:hidden">
         <button
-          onClick={() => setOpenSidebar((s) => !s)}
-          className="w-full px-4 py-2 rounded-xl border text-left"
-          style={{ borderColor: BRAND_NAVY, color: BRAND_NAVY }}
+          onClick={() => setOpenSidebar(!openSidebar)}
+          className="w-full px-4 py-2 rounded-xl font-semibold"
+          style={{ border: `2px solid ${NAVY}`, color: NAVY, background: WHITE }}
         >
           {openSidebar ? "Hide Schools ▲" : "Show Schools ▼"}
         </button>
       </div>
 
       <div className="mt-6 grid gap-6 md:grid-cols-[260px,1fr]">
-        {/* Sidebar */}
-        <aside className={`h-max ${openSidebar ? "block" : "hidden"} md:block`}>
-          <div className="bg-white rounded-2xl p-4 shadow-sm border" style={{ borderColor: "#e9eef4" }}>
-            <div className="text-xs uppercase tracking-wide" style={{ color: BRAND_NAVY }}>
-              Schools
+        {/* Sidebar (ONLY here) */}
+        <aside className={`${openSidebar ? "block" : "hidden"} md:block h-max`}>
+          <div className="rounded-2xl p-4 shadow-sm border" style={{ background: WHITE, borderColor: NAVY }}>
+            <div className="text-xs font-bold tracking-wide" style={{ color: NAVY }}>
+              SCHOOLS
             </div>
-            <ul className="mt-3 space-y-1">
+            <ul className="mt-3 space-y-2">
               {items.map((s) => (
                 <li key={s.slug}>
                   <NavLink
                     to={`/schools/${s.slug}`}
                     className={({ isActive }) =>
                       [
-                        "block rounded-lg px-3 py-2 text-sm font-medium border transition",
-                        isActive ? "text-white" : "text-slate-800",
+                        "block rounded-xl px-3 py-2 text-sm font-semibold transition",
+                        isActive ? "text-white" : "",
                       ].join(" ")
                     }
                     style={({ isActive }) => ({
-                      backgroundColor: isActive ? BRAND_GREEN : "transparent",
-                      border: isActive ? `2px solid ${BRAND_ORANGE}` : "1px solid #e9eef4",
+                      background: isActive ? GREEN : WHITE,
+                      border: `1px solid ${NAVY}`,
+                      color: isActive ? WHITE : NAVY,
                     })}
                   >
                     {s.name}
@@ -97,35 +96,37 @@ export default function Schools() {
               <Link
                 key={s.slug}
                 to={`/schools/${s.slug}`}
-                className="block rounded-2xl p-5 bg-white shadow-sm hover:shadow-md transition border"
-                style={{ borderColor: "#e9eef4" }}
+                className="block rounded-2xl p-5 shadow-sm transition hover:shadow-md border"
+                style={{ background: WHITE, borderColor: NAVY }}
               >
                 <div className="flex items-start justify-between gap-3">
-                  <h2 className="text-lg font-semibold" style={{ color: BRAND_NAVY }}>
+                  <h2 className="text-lg font-bold" style={{ color: NAVY }}>
                     {s.name}
                   </h2>
                   <span
                     className="text-[11px] px-2 py-1 rounded-full"
-                    style={{ background: "#fff6e6", color: "#7a4a10", border: `1px solid ${BRAND_ORANGE}` }}
+                    style={{ background: WHITE, color: NAVY, border: `1px solid ${ORANGE}` }}
                   >
-                    {s.deptCount} Dept{ s.deptCount === 1 ? "" : "s" }
+                    {s.deptCount} Dept{s.deptCount === 1 ? "" : "s"}
                   </span>
                 </div>
                 {s.about && (
-                  <p className="mt-2 text-sm text-slate-600 line-clamp-3">{s.about}</p>
+                  <p className="mt-3 text-sm leading-relaxed line-clamp-3" style={{ color: NAVY }}>
+                    {s.about}
+                  </p>
                 )}
-                <div className="mt-3 flex flex-wrap gap-2 text-xs">
+                <div className="mt-4 flex flex-wrap gap-2 text-xs">
                   <span
-                    className="px-2 py-1 rounded-full"
-                    style={{ background: "#e7f7f1", color: "#065f46", border: "1px solid #bfeee0" }}
+                    className="px-2 py-1 rounded-full font-semibold"
+                    style={{ background: WHITE, color: NAVY, border: `1px solid ${GREEN}` }}
                   >
                     Programs: {s.programCount}
                   </span>
                   <span
-                    className="px-2 py-1 rounded-full"
-                    style={{ background: "#eaf2ff", color: BRAND_NAVY, border: "1px solid #d6e4ff" }}
+                    className="px-2 py-1 rounded-full font-semibold"
+                    style={{ background: WHITE, color: NAVY, border: `1px solid ${ORANGE}` }}
                   >
-                    Click to view departments
+                    View departments →
                   </span>
                 </div>
               </Link>
